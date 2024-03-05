@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html>
+<header>
+<h2>Supriya Blog</h2>
+<link rel="stylesheet" href="style.css">
+</header>
+<body>
+<nav>
+   <a href="#" onclick="showSection('Home')">HOME</a>
+   <a href="#" onclick="showSection('About')">ABOUT</a>
+   <a href="#" onclick="showSection('Project')">PROJECTS</a>
+   <a href="#" onclick="showSection('Contact')">CONTACT</a>
+</nav>
+<div class="container">
+    <div class="blog-posts">
+        <div class="post">
+                 <section id="Home">
+            <h2>Welcome to my blog</h2>
+</section>
+                <section id="About">
+            <p id ="ABOUT"><b>About Me</b><br>I'm Supriya, an ambitious individual, finds my passion in contributing to a dynamic work environment within a reputable company with a background rooted in determination.Not only a skilled person but also a good problem-solver.My commitment is to continuous learning and adaptability makes me valuable asset in corporate world. Through my blog, I aims to share insights, experiences, and inspiring others to pursue their professional goals with courage.</p>
+    <h1>Education Qualifications</h1>
+
+<p>I'm pursuing Btech III yr in the field of CSEAIML in Mallareddy college of Engineering and Technology<br>
+
+   I have completed my intermediate from Prathiba Junior college<br>
+
+   I have completed my schooling from Apex Central School</p>
+
+     <h1>Technical Skills</h1>
+        <p>JAVA<br>
+         PYTHON<br></p> </section>
+      <section id="Project">
+  <h2>Projects</h2>
+    <p>Air Canvas using openCV<br>
+   Image de-convolution using CNN model<br>
+   Software Automation<br></p>
+</section>
+          <section id="Contact">
+         <h2>Contact Me</h2>
+       rampuramsupriyareddy@gmail.com </section>
+
+        </div>
+</div>
+</div>
+<footer>
+  &copy;2024 Supriya Blog.All rights reserved<br>
+    email:rampuramsupriyareddy@gmail.com
+</footer>
+<script>
+    function showSection(sectionId) {
+        var sections = document.querySelectorAll('.container section');
+        sections.forEach(function (section) {
+            if (sectionId === 'Home') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        });
+        var selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+            selectedSection.style.display = 'block';
+        }
+    }
+</script>
+</body>
+</html>
